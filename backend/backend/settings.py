@@ -9,7 +9,8 @@ SECRET_KEY = 'django-insecure-j_89af+30&&4qm*8z9_(^zz8p4-ho8z_m6ylm0s$h!-p@on1_^
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['51.250.20.243', '127.0.0.1', 'localhost','vladimirkolpakov.ddns.net']
+ALLOWED_HOSTS = ['158.160.4.189', '127.0.0.1',
+                 'localhost', 'vladimirkolpakov.ddns.net']
 
 
 # Application definition
@@ -105,7 +106,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-STATIC_URL = 'static_backend'
+STATIC_URL = 'static_backend/'
 
 STATIC_ROOT = BASE_DIR / 'static_backend'
 
@@ -115,10 +116,10 @@ STATIC_ROOT = BASE_DIR / 'static_backend'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ORIGIN_WHITELIST = [
-     'http://localhost:3000'
+    'http://localhost:3000'
 ]
 
-#sentry
+# sentry
 
 sentry_sdk.init(
     dsn="https://1a11e5e427594a1ca3b42f2fb0e7f10b@o4505324025282560.ingest.sentry.io/4505324032688128",
